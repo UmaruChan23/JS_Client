@@ -7,6 +7,7 @@ export default props => (
       <th onClick={props.onSort.bind(null, 'id')}>
           ID {props.sortField === 'id' ? <small>{props.sort}</small> : null}
       </th>
+      <th>forecastDate</th>
       <th onClick={props.onSort.bind(null, 'minimumTemperature')}>
           minimumTemperature {props.sortField === 'minimumTemperature' ? <small>{props.sort}</small> : null}
       </th>
